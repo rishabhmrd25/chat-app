@@ -1,0 +1,181 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+
+.app {
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+.screen {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.screen.active {
+    display: block;
+}
+
+
+.join-screen .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.join-screen h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-input {
+    margin: 15px 0;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-input button {
+    width: 100%;
+    padding: 10px;
+    background: #667eea;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-input button:hover {
+    background: #764ba2;
+}
+
+
+.chat-screen .header {
+    background: #111;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.header .logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header button:hover {
+    background: darkred;
+}
+
+
+.messages {
+    width: 100%;
+    height: 450px;
+    background: #f9f9f9;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.my-message {
+    align-self: flex-end;
+    background: #667eea;
+    color: white;
+}
+
+.other-message {
+    align-self: flex-start;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+
+.typebox {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.typebox input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.typebox button {
+    width: 80px;
+    background: #667eea;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.typebox button:hover {
+    background: #764ba2;
+}
